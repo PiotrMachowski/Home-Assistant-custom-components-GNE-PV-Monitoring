@@ -56,5 +56,12 @@ rm gne_pv_monitoring.zip
 
 Finally, restart Home Assistant and configure the integration.
 
+# Special thanks
+
+Creation of this integration has been sponsored by [@majdzik84](https://github.com/majdzik84)
+
+
+
+
 <a href='https://ko-fi.com/piotrmachowski' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
 <a href="https://paypal.me/PiMachowski" target="_blank"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" border="0" alt="PayPal Logo" style="height: auto !important;width: auto !important;"></a>
