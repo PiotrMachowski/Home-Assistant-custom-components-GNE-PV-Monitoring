@@ -1,0 +1,18 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "GNE Photovoltaic Monitoring",
+        "description": "Provide data required to retrieve data from GNE",
+        "data": {
+          "app_id": "App ID",
+          "app_secret": "App Secret",
+          "beehive_id": "Beehive ID"
+        }
+      }
+    },
+    "error": {
+      "auth": "Failed to connect: \n{error_info}"
+    }
+  }
+}

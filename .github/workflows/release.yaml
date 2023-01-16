@@ -1,0 +1,27 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    name: Prepare release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download repo
+        uses: actions/checkout@v1
+
+      - name: Zip tauron_amiplus dir
+        run: |
+          cd /home/runner/work/Home-Assistant-custom-components-GNE-PV-Monitoring/Home-Assistant-custom-components-GNE-PV-Monitoring/custom_components/gne_pv_monitoring
+          zip gne_pv_monitoring.zip -r ./
+
+      - name: Upload zip to release
+        uses: svenstaro/upload-release-action@v1-release
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: /home/runner/work/Home-Assistant-custom-components-GNE-PV-Monitoring/Home-Assistant-custom-components-GNE-PV-Monitoring/custom_components/gne_pv_monitoring/gne_pv_monitoring.zip
+          asset_name: gne_pv_monitoring.zip
+          tag: ${{ github.ref }}
+          overwrite: true
