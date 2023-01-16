@@ -46,5 +46,13 @@ class GnePVMonitoringSensor(GnePVMonitoringEntity, SensorEntity):
         return PARAMETERS[self._parameter]["state_class"]
 
     @property
+    def entity_category(self):
+        return PARAMETERS[self._parameter]["entity_category"]
+
+    @property
+    def icon(self):
+        return PARAMETERS[self._parameter]["icon"]
+
+    @property
     def unique_id(self):
         return f"{super().unique_id}_sensor_{self._parameter}"

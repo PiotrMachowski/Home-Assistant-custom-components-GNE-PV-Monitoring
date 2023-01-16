@@ -14,7 +14,6 @@ class GnePVMonitoringEntity(CoordinatorEntity):
     def name(self):
         return f"{NAME} {self.mac_id}"
 
-
     @property
     def unique_id(self):
         return f"{self.config_entry.entry_id}_{self.mac_id}"
@@ -28,13 +27,3 @@ class GnePVMonitoringEntity(CoordinatorEntity):
 
     def get_current_data(self) -> dict:
         return self.coordinator.data[self.mac_id]
-
-    @property
-    def extra_state_attributes(self) -> dict:
-        return {
-            "trans_time": self.coordinator.data[self.mac_id]["transTime"]
-        }
-
-    @property
-    def icon(self):
-        return ICON
