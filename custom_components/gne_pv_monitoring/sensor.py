@@ -2,7 +2,7 @@ from homeassistant.components.sensor import ENTITY_ID_FORMAT, SensorEntity
 from homeassistant.helpers.entity import async_generate_entity_id
 
 from . import GnePVMonitoringDataUpdateCoordinator
-from .const import DEFAULT_NAME, DOMAIN, PARAMETERS
+from .const import (DEFAULT_NAME, DOMAIN, PARAMETERS)
 from .entity import GnePVMonitoringEntity
 
 

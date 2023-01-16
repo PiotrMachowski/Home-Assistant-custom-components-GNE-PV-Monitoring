@@ -4,7 +4,7 @@ import voluptuous as vol
 from homeassistant import config_entries
 
 from .api import GnePVMonitoringApiClient
-from .const import (CONF_APP_ID, CONF_APP_SECRET, CONF_BEEHIVE_ID, DOMAIN, )
+from .const import (CONF_APP_ID, CONF_APP_SECRET, CONF_BEEHIVE_ID, DOMAIN)
 
 
 class GnePVMonitoringFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):

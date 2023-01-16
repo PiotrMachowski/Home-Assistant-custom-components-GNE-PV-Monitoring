@@ -12,7 +12,7 @@ import async_timeout
 from aiohttp import ClientSession
 from homeassistant.util import Throttle
 
-from custom_components.gne_pv_monitoring.const import DATETIME_FORMAT, MIN_TIME_BETWEEN_CALLS, URL
+from .const import (DATETIME_FORMAT, MIN_TIME_BETWEEN_CALLS, URL)
 
 TIMEOUT = 10
 

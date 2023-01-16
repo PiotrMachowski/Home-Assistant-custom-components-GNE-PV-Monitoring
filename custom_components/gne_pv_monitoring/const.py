@@ -1,8 +1,8 @@
 import datetime
 
 from homeassistant.components.sensor import SensorDeviceClass, SensorStateClass
-from homeassistant.const import ELECTRIC_CURRENT_AMPERE, ELECTRIC_POTENTIAL_VOLT, ENERGY_WATT_HOUR, POWER_WATT, \
-    TEMP_CELSIUS
+from homeassistant.const import (ELECTRIC_CURRENT_AMPERE, ELECTRIC_POTENTIAL_VOLT, ENERGY_WATT_HOUR, POWER_WATT,
+                                 TEMP_CELSIUS)
 
 NAME = "GNE PV Monitoring"
 DOMAIN = "gne_pv_monitoring"
@@ -13,6 +13,7 @@ ICON = "mdi:solar-panel"
 # Platforms
 SENSOR = "sensor"
 PLATFORMS = [SENSOR]
+SCAN_INTERVAL = datetime.timedelta(minutes=10, seconds=1)
 
 # Configuration and options
 CONF_APP_ID = "app_id"

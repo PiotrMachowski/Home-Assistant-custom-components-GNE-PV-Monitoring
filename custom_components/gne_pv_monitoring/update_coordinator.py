@@ -1,13 +1,10 @@
 import logging
-from datetime import timedelta
 
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 
 from .api import GnePVMonitoringApiClient
-from .const import (DOMAIN)
-
-SCAN_INTERVAL = timedelta(minutes=12)
+from .const import (DOMAIN, SCAN_INTERVAL)
 
 _LOGGER: logging.Logger = logging.getLogger(__package__)
 
@@ -19,12 +16,14 @@ class GnePVMonitoringDataUpdateCoordinator(DataUpdateCoordinator):
     ) -> None:
         self.api = client
         self.platforms = []
+        self.raw_data = None
 
         super().__init__(hass, _LOGGER, name=DOMAIN, update_interval=SCAN_INTERVAL)
 
     async def _async_update_data(self):
         try:
-            return GnePVMonitoringDataUpdateCoordinator.postprocess_raw_data(await self.api.async_get_data())
+            self.raw_data = await self.api.async_get_data()
+            return GnePVMonitoringDataUpdateCoordinator.postprocess_raw_data(self.raw_data)
         except Exception as exception:
             raise UpdateFailed() from exception
 
