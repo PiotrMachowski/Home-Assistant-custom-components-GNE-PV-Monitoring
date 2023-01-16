@@ -56,3 +56,9 @@ class GnePVMonitoringSensor(GnePVMonitoringEntity, SensorEntity):
     @property
     def unique_id(self):
         return f"{super().unique_id}_sensor_{self._parameter}"
+
+    @property
+    def extra_state_attributes(self):
+        return {
+            "raw_value": self.state
+        }

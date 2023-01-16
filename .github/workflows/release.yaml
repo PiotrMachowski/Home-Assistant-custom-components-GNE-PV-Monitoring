@@ -12,7 +12,7 @@ jobs:
       - name: Download repo
         uses: actions/checkout@v1
 
-      - name: Zip tauron_amiplus dir
+      - name: Zip gne_pv_monitoring dir
         run: |
           cd /home/runner/work/Home-Assistant-custom-components-GNE-PV-Monitoring/Home-Assistant-custom-components-GNE-PV-Monitoring/custom_components/gne_pv_monitoring
           zip gne_pv_monitoring.zip -r ./
