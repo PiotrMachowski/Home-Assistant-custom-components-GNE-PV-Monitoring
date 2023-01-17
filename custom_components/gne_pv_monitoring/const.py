@@ -14,7 +14,7 @@ ICON = "mdi:solar-panel"
 # Platforms
 SENSOR = "sensor"
 PLATFORMS = [SENSOR]
-SCAN_INTERVAL = datetime.timedelta(minutes=10, seconds=1)
+SCAN_INTERVAL = datetime.timedelta(minutes=5, seconds=1)
 
 # Configuration and options
 CONF_APP_ID = "app_id"
@@ -27,7 +27,7 @@ DEFAULT_NAME = DOMAIN
 # API
 URL = "http://newapi.gnetek.com/trdapp/queryBeehiveHoneybees"
 DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"
-MIN_TIME_BETWEEN_CALLS = datetime.timedelta(minutes=10)
+MIN_TIME_BETWEEN_CALLS = datetime.timedelta(minutes=5)
 PARAMETERS = {
     "inVoltage1": {
         "unit": ELECTRIC_POTENTIAL_VOLT,
