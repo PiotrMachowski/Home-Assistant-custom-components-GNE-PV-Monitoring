@@ -4,7 +4,7 @@
   "documentation": "https://github.com/PiotrMachowski/Home-Assistant-custom-components-GNE-PV-Monitoring",
   "issue_tracker": "https://github.com/PiotrMachowski/Home-Assistant-custom-components-GNE-PV-Monitoring/issues",
   "iot_class": "cloud_polling",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "config_flow": true,
   "requirements": [
     "aiohttp",

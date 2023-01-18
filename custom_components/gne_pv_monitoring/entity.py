@@ -1,6 +1,6 @@
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .const import (DOMAIN, ICON, NAME)
+from .const import (DOMAIN, NAME)
 
 
 class GnePVMonitoringEntity(CoordinatorEntity):

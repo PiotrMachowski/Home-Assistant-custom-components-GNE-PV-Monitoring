@@ -60,5 +60,5 @@ class GnePVMonitoringSensor(GnePVMonitoringEntity, SensorEntity):
     @property
     def extra_state_attributes(self):
         if self.entity_category is None:
-            return {"rounded_value": round(self.state)}
+            return {"rounded_value": round(float(self.state))}
         return {}
