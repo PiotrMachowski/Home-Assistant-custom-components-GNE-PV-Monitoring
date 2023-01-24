@@ -26,7 +26,7 @@
 
 # GNE Photovoltaic Monitoring
 
-This sensor uses official API to get data from GNE.
+This sensor uses official API to get data from [GNE](https://gne.gnetek.com/).
 
 ## Configuration
 
