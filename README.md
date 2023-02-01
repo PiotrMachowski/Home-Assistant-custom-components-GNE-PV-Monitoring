@@ -7,7 +7,7 @@
 
 
 [hacs_shield]: https://img.shields.io/static/v1.svg?label=HACS&message=Custom&style=popout&color=orange&labelColor=41bdf5&logo=HomeAssistantCommunityStore&logoColor=white
-[hacs]: https://hacs.xyz/docs/default_repositories
+[hacs]: https://hacs.xyz/docs/faq/custom_repositories
 
 [latest_release]: https://github.com/PiotrMachowski/Home-Assistant-custom-components-GNE-PV-Monitoring/releases/latest
 [releases_shield]: https://img.shields.io/github/release/PiotrMachowski/Home-Assistant-custom-components-GNE-PV-Monitoring.svg?style=popout
