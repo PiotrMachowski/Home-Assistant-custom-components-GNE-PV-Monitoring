@@ -44,8 +44,9 @@ You can also use following [My Home Assistant](http://my.home-assistant.io/) lin
 
 ### Using [HACS](https://hacs.xyz/) (recommended)
 
-* In _Integrations_ section add this repository `https://github.com/PiotrMachowski/Home-Assistant-custom-components-GNE-PV-Monitoring` with type `integration`
-* Install added repository
+This integration can be installed using HACS.
+To do it search for `GNE PV Monitoring` in *Integrations* section.
+
  
 ### Manual
 
