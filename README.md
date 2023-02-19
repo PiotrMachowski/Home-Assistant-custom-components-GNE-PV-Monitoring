@@ -1,4 +1,4 @@
-[![HACS Custom][hacs_shield]][hacs]
+[![HACS Default][hacs_shield]][hacs]
 [![GitHub Latest Release][releases_shield]][latest_release]
 [![GitHub All Releases][downloads_total_shield]][releases]
 [![Ko-Fi][ko_fi_shield]][ko_fi]
@@ -6,8 +6,8 @@
 [![PayPal.Me][paypal_me_shield]][paypal_me]
 
 
-[hacs_shield]: https://img.shields.io/static/v1.svg?label=HACS&message=Custom&style=popout&color=orange&labelColor=41bdf5&logo=HomeAssistantCommunityStore&logoColor=white
-[hacs]: https://hacs.xyz/docs/faq/custom_repositories
+[hacs_shield]: https://img.shields.io/static/v1.svg?label=HACS&message=Default&style=popout&color=green&labelColor=41bdf5&logo=HomeAssistantCommunityStore&logoColor=white
+[hacs]: https://hacs.xyz/docs/default_repositories
 
 [latest_release]: https://github.com/PiotrMachowski/Home-Assistant-custom-components-GNE-PV-Monitoring/releases/latest
 [releases_shield]: https://img.shields.io/github/release/PiotrMachowski/Home-Assistant-custom-components-GNE-PV-Monitoring.svg?style=popout
