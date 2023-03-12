@@ -40,6 +40,10 @@ You can also use following [My Home Assistant](http://my.home-assistant.io/) lin
 
 [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=gne_pv_monitoring)
 
+### Credentials
+
+For the App ID and App Secret you have to write to the manufacturer: service@gnetek.com and ask for login details (app_id and app_secret) to get information from their API.
+
 ## Installation
 
 ### Using [HACS](https://hacs.xyz/) (recommended)
