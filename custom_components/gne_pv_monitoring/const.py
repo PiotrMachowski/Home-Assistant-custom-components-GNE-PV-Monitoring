@@ -1,8 +1,8 @@
 import datetime
 
 from homeassistant.components.sensor import SensorDeviceClass, SensorStateClass
-from homeassistant.const import (ELECTRIC_CURRENT_AMPERE, ELECTRIC_POTENTIAL_VOLT, ENERGY_KILO_WATT_HOUR,
-                                 POWER_WATT, TEMP_CELSIUS)
+from homeassistant.const import (UnitOfElectricCurrent, UnitOfElectricPotential, UnitOfEnergy, UnitOfPower,
+                                 UnitOfTemperature, Platform)
 from homeassistant.helpers.entity import EntityCategory
 
 NAME = "GNE PV Monitoring"
@@ -12,8 +12,7 @@ DOMAIN = "gne_pv_monitoring"
 ICON = "mdi:solar-panel"
 
 # Platforms
-SENSOR = "sensor"
-PLATFORMS = [SENSOR]
+PLATFORMS = [Platform.SENSOR]
 SCAN_INTERVAL = datetime.timedelta(minutes=5, seconds=1)
 
 # Configuration and options
@@ -30,49 +29,49 @@ DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"
 MIN_TIME_BETWEEN_CALLS = datetime.timedelta(minutes=5)
 PARAMETERS = {
     "inVoltage1": {
-        "unit": ELECTRIC_POTENTIAL_VOLT,
+        "unit": UnitOfElectricPotential.VOLT,
         "device_class": SensorDeviceClass.VOLTAGE,
         "state_class": SensorStateClass.MEASUREMENT,
         "icon": "mdi:lightning-bolt-circle",
         "entity_category": None
     },
     "inCurrent1": {
-        "unit": ELECTRIC_CURRENT_AMPERE,
+        "unit": UnitOfElectricCurrent.AMPERE,
         "device_class": SensorDeviceClass.CURRENT,
         "state_class": SensorStateClass.MEASUREMENT,
         "icon": "mdi:current-dc",
         "entity_category": None
     },
     "power1": {
-        "unit": POWER_WATT,
+        "unit": UnitOfPower.WATT,
         "device_class": SensorDeviceClass.POWER,
         "state_class": SensorStateClass.MEASUREMENT,
         "icon": "mdi:flash",
         "entity_category": None
     },
     "outVoltage": {
-        "unit": ELECTRIC_POTENTIAL_VOLT,
+        "unit": UnitOfElectricPotential.VOLT,
         "device_class": SensorDeviceClass.VOLTAGE,
         "state_class": SensorStateClass.MEASUREMENT,
         "icon": "mdi:lightning-bolt-circle",
         "entity_category": None
     },
     "outCurrent": {
-        "unit": ELECTRIC_CURRENT_AMPERE,
+        "unit": UnitOfElectricCurrent.AMPERE,
         "device_class": SensorDeviceClass.CURRENT,
         "state_class": SensorStateClass.MEASUREMENT,
         "icon": "mdi:current-dc",
         "entity_category": None
     },
     "dailyEnergy": {
-        "unit": ENERGY_KILO_WATT_HOUR,
+        "unit": UnitOfEnergy.KILO_WATT_HOUR,
         "device_class": SensorDeviceClass.ENERGY,
         "state_class": SensorStateClass.TOTAL_INCREASING,
         "icon": "mdi:solar-power",
         "entity_category": None
     },
     "temperature": {
-        "unit": TEMP_CELSIUS,
+        "unit": UnitOfTemperature.CELSIUS,
         "device_class": SensorDeviceClass.TEMPERATURE,
         "state_class": SensorStateClass.MEASUREMENT,
         "icon": "mdi:thermometer",

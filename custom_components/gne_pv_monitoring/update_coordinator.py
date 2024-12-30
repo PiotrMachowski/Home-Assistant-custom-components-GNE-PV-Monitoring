@@ -15,7 +15,6 @@ class GnePVMonitoringDataUpdateCoordinator(DataUpdateCoordinator):
             self, hass: HomeAssistant, client: GnePVMonitoringApiClient
     ) -> None:
         self.api = client
-        self.platforms = []
         self.raw_data = None
 
         super().__init__(hass, _LOGGER, name=DOMAIN, update_interval=SCAN_INTERVAL)
