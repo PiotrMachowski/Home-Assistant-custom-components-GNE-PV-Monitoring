@@ -2,7 +2,7 @@ import logging
 from datetime import timedelta
 
 from homeassistant.config_entries import ConfigEntry
-from homeassistant.core import Config, HomeAssistant
+from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import ConfigEntryNotReady
 
 from .api import GnePVMonitoringApiClient
@@ -12,10 +12,6 @@ from .update_coordinator import GnePVMonitoringDataUpdateCoordinator
 SCAN_INTERVAL = timedelta(seconds=30)
 
 _LOGGER: logging.Logger = logging.getLogger(__package__)
-
-
-async def async_setup(hass: HomeAssistant, config: Config):
-    return True
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
