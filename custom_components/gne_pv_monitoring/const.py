@@ -24,7 +24,7 @@ CONF_BEEHIVE_ID = "beehive_id"
 DEFAULT_NAME = DOMAIN
 
 # API
-URL = "http://newapi.gnetek.com/trdapp/queryBeehiveHoneybees"
+URL = "https://newapi.gnetek.com/trdapp/queryBeehiveHoneybees"
 DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"
 MIN_TIME_BETWEEN_CALLS = datetime.timedelta(minutes=5)
 PARAMETERS = {
